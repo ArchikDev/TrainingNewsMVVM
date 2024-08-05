@@ -18,7 +18,6 @@ import androidx.compose.runtime.remember
 import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.unit.dp
 import com.dolgozitbudet.trainingnewsmvvm.presentation.common.NewsButton
 import com.dolgozitbudet.trainingnewsmvvm.presentation.common.NewsTextButton
 import com.dolgozitbudet.trainingnewsmvvm.presentation.common.PageIndicator
@@ -100,6 +99,5 @@ fun OnBoardingScreen() {
             }
         }
         Spacer(modifier = Modifier.weight(.5f))
-
     }
 }
