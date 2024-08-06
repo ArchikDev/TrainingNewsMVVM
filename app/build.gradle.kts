@@ -78,4 +78,5 @@ dependencies {
     implementation(libs.google.dagger.hilt)
     implementation(libs.google.dagger.hilt.navigation)
     implementation(libs.androidx.navigation)
+    implementation(libs.google.system.ui)
 }

@@ -18,6 +18,7 @@ compilerKaptVersion = "1.9.0"
 compilerHiltVersion = "2.48"
 compilerHiltNavVersion = "1.0.0"
 navigationVersion = "2.6.0"
+systemUiVersion = "0.31.4-beta"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -44,7 +45,7 @@ google-dagger-hilt = { group = "com.google.dagger", name = "hilt-android", versi
 google-dagger-hilt-compiler = { group = "com.google.dagger", name = "hilt-android-compiler", version.ref = "compilerHiltVersion" }
 google-dagger-hilt-navigation = { group = "androidx.hilt", name = "hilt-navigation-compose", version.ref = "compilerHiltNavVersion" }
 androidx-navigation = { group = "androidx.navigation", name = "navigation-compose", version.ref = "navigationVersion" }
-
+google-system-ui = { group = "com.google.accompanist", name = "accompanist-systemuicontroller", version.ref = "systemUiVersion" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
