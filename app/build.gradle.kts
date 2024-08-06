@@ -1,6 +1,8 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.jetbrains.kotlin.android)
+    alias(libs.plugins.compilerKapt)
+    alias(libs.plugins.compilerDaggerHilt)
 }
 
 android {
@@ -72,4 +74,6 @@ dependencies {
     // Add
     implementation(libs.splash.screen)
     implementation(libs.datastore)
+    kapt(libs.google.dagger.hilt.compiler)
+    implementation(libs.google.dagger.hilt)
 }
