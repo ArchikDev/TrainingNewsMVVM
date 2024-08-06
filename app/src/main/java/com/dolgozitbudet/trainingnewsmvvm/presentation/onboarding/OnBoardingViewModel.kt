@@ -2,14 +2,14 @@ package com.dolgozitbudet.trainingnewsmvvm.presentation.onboarding
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.dolgozitbudet.trainingnewsmvvm.domain.usecases.AppEntryAppUseCases
+import com.dolgozitbudet.trainingnewsmvvm.domain.usecases.AppEntryUseCases
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.launch
 import javax.inject.Inject
 
 @HiltViewModel
 class OnBoardingViewModel @Inject constructor(
-    private val appEntryAppUseCases: AppEntryAppUseCases
+    private val appEntryUseCases: AppEntryUseCases
 ): ViewModel() {
 
     fun onEvent(event: OnBoardingEvent) {
@@ -22,7 +22,7 @@ class OnBoardingViewModel @Inject constructor(
 
     private fun saveAppEntry() {
         viewModelScope.launch {
-            appEntryAppUseCases.saveAppEntry()
+            appEntryUseCases.saveAppEntry()
         }
     }
 

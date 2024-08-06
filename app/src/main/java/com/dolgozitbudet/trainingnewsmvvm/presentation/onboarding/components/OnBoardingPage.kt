@@ -16,8 +16,8 @@ import androidx.compose.ui.res.colorResource
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontWeight
 import com.dolgozitbudet.trainingnewsmvvm.R
-import com.dolgozitbudet.trainingnewsmvvm.presentation.onboarding.Dimens.MediumPaddding1
-import com.dolgozitbudet.trainingnewsmvvm.presentation.onboarding.Dimens.MediumPaddding2
+import com.dolgozitbudet.trainingnewsmvvm.presentation.Dimens.MediumPaddding1
+import com.dolgozitbudet.trainingnewsmvvm.presentation.Dimens.MediumPaddding2
 import com.dolgozitbudet.trainingnewsmvvm.presentation.onboarding.Page
 
 @Composable

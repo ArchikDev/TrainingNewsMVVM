@@ -11,7 +11,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
-import com.dolgozitbudet.trainingnewsmvvm.presentation.onboarding.Dimens.IndicatorSize
+import com.dolgozitbudet.trainingnewsmvvm.presentation.Dimens.IndicatorSize
 import com.dolgozitbudet.trainingnewsmvvm.ui.theme.BlueGray
 
 @Composable

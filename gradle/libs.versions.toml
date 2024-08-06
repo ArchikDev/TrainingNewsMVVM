@@ -17,6 +17,7 @@ datastorePreferencesCoreJvm = "1.1.1"
 compilerKaptVersion = "1.9.0"
 compilerHiltVersion = "2.48"
 compilerHiltNavVersion = "1.0.0"
+navigationVersion = "2.6.0"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -42,6 +43,7 @@ androidx-datastore-preferences-core-jvm = { group = "androidx.datastore", name =
 google-dagger-hilt = { group = "com.google.dagger", name = "hilt-android", version.ref = "compilerHiltVersion" }
 google-dagger-hilt-compiler = { group = "com.google.dagger", name = "hilt-android-compiler", version.ref = "compilerHiltVersion" }
 google-dagger-hilt-navigation = { group = "androidx.hilt", name = "hilt-navigation-compose", version.ref = "compilerHiltNavVersion" }
+androidx-navigation = { group = "androidx.navigation", name = "navigation-compose", version.ref = "navigationVersion" }
 
 
 [plugins]

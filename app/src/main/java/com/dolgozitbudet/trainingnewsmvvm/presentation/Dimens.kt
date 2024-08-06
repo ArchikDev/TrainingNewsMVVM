@@ -1,4 +1,4 @@
-package com.dolgozitbudet.trainingnewsmvvm.presentation.onboarding
+package com.dolgozitbudet.trainingnewsmvvm.presentation
 
 import androidx.compose.ui.unit.dp
 

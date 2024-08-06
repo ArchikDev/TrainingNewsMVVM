@@ -1,6 +1,6 @@
 package com.dolgozitbudet.trainingnewsmvvm.domain.usecases
 
-data class AppEntryAppUseCases(
+data class AppEntryUseCases(
     val readAppEntry: ReadAppEntry,
     val saveAppEntry: SaveAppEntry
 )

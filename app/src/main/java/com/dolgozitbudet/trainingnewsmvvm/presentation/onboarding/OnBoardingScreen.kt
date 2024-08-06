@@ -21,8 +21,8 @@ import androidx.compose.ui.Modifier
 import com.dolgozitbudet.trainingnewsmvvm.presentation.common.NewsButton
 import com.dolgozitbudet.trainingnewsmvvm.presentation.common.NewsTextButton
 import com.dolgozitbudet.trainingnewsmvvm.presentation.common.PageIndicator
-import com.dolgozitbudet.trainingnewsmvvm.presentation.onboarding.Dimens.MediumPaddding2
-import com.dolgozitbudet.trainingnewsmvvm.presentation.onboarding.Dimens.PageIndicatorWidth
+import com.dolgozitbudet.trainingnewsmvvm.presentation.Dimens.MediumPaddding2
+import com.dolgozitbudet.trainingnewsmvvm.presentation.Dimens.PageIndicatorWidth
 import com.dolgozitbudet.trainingnewsmvvm.presentation.onboarding.components.OnBoardingPage
 import kotlinx.coroutines.launch
 

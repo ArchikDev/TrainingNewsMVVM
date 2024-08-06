@@ -3,7 +3,7 @@ package com.dolgozitbudet.trainingnewsmvvm.di
 import android.app.Application
 import com.dolgozitbudet.trainingnewsmvvm.data.manager.LocalUserManagerImpl
 import com.dolgozitbudet.trainingnewsmvvm.domain.manager.LocalUserManager
-import com.dolgozitbudet.trainingnewsmvvm.domain.usecases.AppEntryAppUseCases
+import com.dolgozitbudet.trainingnewsmvvm.domain.usecases.AppEntryUseCases
 import com.dolgozitbudet.trainingnewsmvvm.domain.usecases.ReadAppEntry
 import com.dolgozitbudet.trainingnewsmvvm.domain.usecases.SaveAppEntry
 import dagger.Module
@@ -26,7 +26,7 @@ object AppModule {
     @Singleton
     fun provideAppEntryUseCases(
         localUserManager: LocalUserManager
-    ) = AppEntryAppUseCases(
+    ) = AppEntryUseCases(
         readAppEntry = ReadAppEntry(localUserManager),
         saveAppEntry = SaveAppEntry(localUserManager),
     )

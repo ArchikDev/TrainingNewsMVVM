@@ -77,4 +77,5 @@ dependencies {
     kapt(libs.google.dagger.hilt.compiler)
     implementation(libs.google.dagger.hilt)
     implementation(libs.google.dagger.hilt.navigation)
+    implementation(libs.androidx.navigation)
 }
