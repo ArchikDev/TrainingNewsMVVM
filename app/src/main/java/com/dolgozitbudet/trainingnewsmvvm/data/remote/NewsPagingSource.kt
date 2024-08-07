@@ -2,7 +2,7 @@ package com.dolgozitbudet.trainingnewsmvvm.data.remote
 
 import androidx.paging.PagingSource
 import androidx.paging.PagingState
-import com.dolgozitbudet.trainingnewsmvvm.data.remote.dto.Article
+import com.dolgozitbudet.trainingnewsmvvm.domain.model.Article
 
 class NewsPagingSource(
     private val newsApi: NewsApi,
@@ -10,9 +10,6 @@ class NewsPagingSource(
 ): PagingSource<Int, Article>() {
 
     private var totalNewsCount = 0
-
-
-
 
     override suspend fun load(params: LoadParams<Int>): LoadResult<Int, Article> {
         val page = params.key ?: 1

@@ -85,4 +85,5 @@ dependencies {
     implementation(libs.androidx.paging.compose)
     implementation(libs.retrofit2)
     implementation(libs.retrofit2.converter)
+    implementation(libs.coil)
 }

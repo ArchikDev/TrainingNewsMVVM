@@ -1,4 +1,6 @@
-package com.dolgozitbudet.trainingnewsmvvm.data.remote.dto
+package com.dolgozitbudet.trainingnewsmvvm.domain.model
+
+import com.dolgozitbudet.trainingnewsmvvm.data.remote.dto.Source
 
 data class Article(
     val author: String,

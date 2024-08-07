@@ -5,7 +5,7 @@ import androidx.paging.PagingConfig
 import androidx.paging.PagingData
 import com.dolgozitbudet.trainingnewsmvvm.data.remote.NewsApi
 import com.dolgozitbudet.trainingnewsmvvm.data.remote.NewsPagingSource
-import com.dolgozitbudet.trainingnewsmvvm.data.remote.dto.Article
+import com.dolgozitbudet.trainingnewsmvvm.domain.model.Article
 import com.dolgozitbudet.trainingnewsmvvm.domain.repository.NewsRepository
 import kotlinx.coroutines.flow.Flow
 
