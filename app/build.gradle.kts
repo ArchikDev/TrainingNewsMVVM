@@ -64,6 +64,8 @@ dependencies {
     implementation(libs.protolite.well.known.types)
     implementation(libs.androidx.datastore.core.android)
     implementation(libs.androidx.datastore.preferences.core.jvm)
+    implementation(libs.androidx.paging.common.android)
+    implementation(libs.androidx.paging.common.jvm)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
@@ -79,4 +81,8 @@ dependencies {
     implementation(libs.google.dagger.hilt.navigation)
     implementation(libs.androidx.navigation)
     implementation(libs.google.system.ui)
+    implementation(libs.androidx.paging.runtime)
+    implementation(libs.androidx.paging.compose)
+    implementation(libs.retrofit2)
+    implementation(libs.retrofit2.converter)
 }

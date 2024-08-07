@@ -1,4 +1,4 @@
-package com.dolgozitbudet.trainingnewsmvvm.domain.usecases
+package com.dolgozitbudet.trainingnewsmvvm.domain.usecases.app_entry
 
 import com.dolgozitbudet.trainingnewsmvvm.domain.manager.LocalUserManager
 import kotlinx.coroutines.flow.Flow

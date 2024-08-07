@@ -4,8 +4,8 @@ import android.app.Application
 import com.dolgozitbudet.trainingnewsmvvm.data.manager.LocalUserManagerImpl
 import com.dolgozitbudet.trainingnewsmvvm.domain.manager.LocalUserManager
 import com.dolgozitbudet.trainingnewsmvvm.domain.usecases.AppEntryUseCases
-import com.dolgozitbudet.trainingnewsmvvm.domain.usecases.ReadAppEntry
-import com.dolgozitbudet.trainingnewsmvvm.domain.usecases.SaveAppEntry
+import com.dolgozitbudet.trainingnewsmvvm.domain.usecases.app_entry.ReadAppEntry
+import com.dolgozitbudet.trainingnewsmvvm.domain.usecases.app_entry.SaveAppEntry
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
