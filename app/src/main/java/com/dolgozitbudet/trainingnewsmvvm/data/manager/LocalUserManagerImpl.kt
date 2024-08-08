@@ -9,6 +9,7 @@ import androidx.datastore.preferences.preferencesDataStore
 import com.dolgozitbudet.trainingnewsmvvm.domain.manager.LocalUserManager
 import com.dolgozitbudet.trainingnewsmvvm.util.Constants
 import com.dolgozitbudet.trainingnewsmvvm.util.Constants.USER_SETTINGS
+import dagger.hilt.android.qualifiers.ApplicationContext
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.map
 

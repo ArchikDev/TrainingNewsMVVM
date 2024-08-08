@@ -12,6 +12,7 @@ import com.dolgozitbudet.trainingnewsmvvm.domain.usecases.app_entry.SaveAppEntry
 import com.dolgozitbudet.trainingnewsmvvm.domain.usecases.news.GetNews
 import com.dolgozitbudet.trainingnewsmvvm.domain.usecases.news.NewsUseCases
 import com.dolgozitbudet.trainingnewsmvvm.util.Constants.BASE_URL
+import dagger.Binds
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -49,9 +50,26 @@ object AppModule {
             .create(NewsApi::class.java)
     }
 
+//    @Provides
+//    @Singleton
+//    fun providesRetrofit() : Retrofit {
+//        return Retrofit.Builder()
+//            .addConverterFactory(GsonConverterFactory.create())
+//            .baseUrl(BASE_URL)
+//            .build()
+//    }
+//
+//    @Provides
+//    @Singleton
+//    fun provideNewsApi(retrofit : Retrofit) : NewsApi {
+//        return retrofit.create(NewsApi::class.java)
+//    }
+
     @Provides
     @Singleton
-    fun provideNewsRepository(newsApi: NewsApi) = NewsRepositoryImpl(newsApi)
+    fun provideNewsRepository(newsApi: NewsApi): NewsRepository {
+        return NewsRepositoryImpl(newsApi)
+    }
 
     @Provides
     @Singleton
