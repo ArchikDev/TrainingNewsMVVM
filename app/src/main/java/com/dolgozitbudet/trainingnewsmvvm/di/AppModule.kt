@@ -11,6 +11,7 @@ import com.dolgozitbudet.trainingnewsmvvm.domain.usecases.app_entry.ReadAppEntry
 import com.dolgozitbudet.trainingnewsmvvm.domain.usecases.app_entry.SaveAppEntry
 import com.dolgozitbudet.trainingnewsmvvm.domain.usecases.news.GetNews
 import com.dolgozitbudet.trainingnewsmvvm.domain.usecases.news.NewsUseCases
+import com.dolgozitbudet.trainingnewsmvvm.domain.usecases.news.SearchNews
 import com.dolgozitbudet.trainingnewsmvvm.util.Constants.BASE_URL
 import dagger.Binds
 import dagger.Module
@@ -75,7 +76,8 @@ object AppModule {
     @Singleton
     fun provideNewsUseCases(newsRepository: NewsRepository): NewsUseCases {
         return NewsUseCases(
-            getNews = GetNews(newsRepository)
+            getNews = GetNews(newsRepository),
+            searchNews = SearchNews(newsRepository)
         )
     }
 

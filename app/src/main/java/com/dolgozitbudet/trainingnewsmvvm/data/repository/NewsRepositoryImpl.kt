@@ -5,6 +5,7 @@ import androidx.paging.PagingConfig
 import androidx.paging.PagingData
 import com.dolgozitbudet.trainingnewsmvvm.data.remote.NewsApi
 import com.dolgozitbudet.trainingnewsmvvm.data.remote.NewsPagingSource
+import com.dolgozitbudet.trainingnewsmvvm.data.remote.SearchNewsPagingSource
 import com.dolgozitbudet.trainingnewsmvvm.domain.model.Article
 import com.dolgozitbudet.trainingnewsmvvm.domain.repository.NewsRepository
 import kotlinx.coroutines.flow.Flow
@@ -24,7 +25,16 @@ class NewsRepositoryImpl(
         ).flow
     }
 
-//    override fun searchNews(searchQuery: String, sources: List<String>): Flow<PagingData<Article>> {
-//        TODO("Not yet implemented")
-//    }
+    override fun searchNews(searchQuery: String, sources: List<String>): Flow<PagingData<Article>> {
+        return Pager(
+            config = PagingConfig(pageSize = 10),
+            pagingSourceFactory = {
+                SearchNewsPagingSource(
+                    searchQuery = searchQuery,
+                    newsApi = newsApi,
+                    sources = sources.joinToString(separator = ",")
+                )
+            }
+        ).flow
+    }
 }

@@ -22,6 +22,7 @@ import androidx.compose.ui.res.colorResource
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextOverflow
+import androidx.compose.ui.unit.dp
 import coil.compose.AsyncImage
 import coil.request.ImageRequest
 import com.dolgozitbudet.trainingnewsmvvm.R
@@ -29,6 +30,7 @@ import com.dolgozitbudet.trainingnewsmvvm.domain.model.Article
 import com.dolgozitbudet.trainingnewsmvvm.presentation.Dimens.ArticleCardSize
 import com.dolgozitbudet.trainingnewsmvvm.presentation.Dimens.ExtraSmallPadding
 import com.dolgozitbudet.trainingnewsmvvm.presentation.Dimens.ExtraSmallPadding2
+import com.dolgozitbudet.trainingnewsmvvm.presentation.Dimens.MediumPaddding1
 import com.dolgozitbudet.trainingnewsmvvm.presentation.Dimens.SmallIconSize
 
 @Composable
@@ -40,6 +42,7 @@ fun ArticleCard(
     val context = LocalContext.current
     
     Row(
+        horizontalArrangement = Arrangement.spacedBy(15.dp),
         modifier = Modifier
             .clickable { onClick() }
     ) {

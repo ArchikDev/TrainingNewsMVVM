@@ -26,6 +26,7 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.dp
 import androidx.paging.LoadState
 import com.dolgozitbudet.trainingnewsmvvm.R
+import com.dolgozitbudet.trainingnewsmvvm.presentation.Dimens.MediumPaddding1
 import java.net.ConnectException
 import java.net.SocketTimeoutException
 
@@ -65,7 +66,9 @@ fun EmptyScreen(error: LoadState.Error? = null) {
 @Composable
 fun EmptyContent(alphaAnim: Float, message: String, iconId: Int) {
     Column(
-        modifier = Modifier.fillMaxSize(),
+        modifier = Modifier
+            .fillMaxSize()
+            .padding(horizontal = MediumPaddding1),
         horizontalAlignment = Alignment.CenterHorizontally,
         verticalArrangement = Arrangement.Center
     ) {
